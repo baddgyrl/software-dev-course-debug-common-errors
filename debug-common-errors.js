@@ -26,7 +26,8 @@ Think about which debugging methods you found most useful and how you might appl
 
 console.log("Welcome to the bootcamp
 
-// What’s Wrong?
+Missing the parenthesis on the end along with semicolon.
+console.log("Welcome to the Bootcamp);
 
 
 // Program B
@@ -39,7 +40,11 @@ for (let i = 0; i < numbers.length; i++) {
   console.log(doubled);
 }
 
-// What’s Wrong?
+The word eight is text not a number in the first line initialization of number string.
+let numbers = [2, 4, 8];
+for (let i = 0; i < numbers.length; i++); {
+let double = numbers [i] * 2;
+console.log(doubled);
 
 
 
@@ -59,4 +64,14 @@ function isPrime(num) {
 
 console.log(isPrime(7)); // Expected true but gets false
 
-// What’s Wrong?
+Division returns true which is not prime. The final false is incorrect.
+function isPrime(num) {
+if (num < 2) return false;
+for(let i =2; i < num; i++)}
+if(num % i === 0) {
+return false: //num is NOT prime
+}
+}
+return true; // num IS prime
+}
+
